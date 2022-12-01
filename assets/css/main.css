@@ -22,9 +22,17 @@
     left: 0px;
   }
 }
+@keyframes slideinr {
+  0% {
+    right: -1000px;
+  }
+  100%{
+    right: 0px;
+  }
+}
 @keyframes slidedown {
   0% {
-    top: -200px;
+    top: -2000px;
   }
   100%{
     top: 0px;
@@ -33,26 +41,18 @@
 
 .logo{
   position: relative;
-  animation: slidedown ease-in-out 1s;
+  animation: slidein ease-in-out 1.5s;
 }
 .icons{
   animation: transitionIn ease-in-out 1s;
 
 }
-.content{
+
+#lol{
   position: relative;
-  animation: transitionIn ease-in-out 1s;
+   animation: slideinr ease-in-out 1.5s;
 
 }
-#banner{
-  animation: slidein ease-in-out 1.5s;
-}
-}
-.major{
-   position: relative;
-  animation: slidedown ease-in-out 1.5s;
-}
-
 
 
 /*
@@ -1888,7 +1888,7 @@ button,
 
             
             dashboard{
-              width: 800px;
+              width: 900px;
               height: 550px;
             }
             @media screen and (max-width: 480px){
